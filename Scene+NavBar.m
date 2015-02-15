@@ -131,6 +131,7 @@ static char SceneEZNavBar;
         return bar;
     }else{
         EZNavBar *navBar = [[EZNavBar alloc]init];
+        self.navigationController.navigationBar.hidden = YES;
         if(self.navigationController.navigationBar.barTintColor.isNotEmpty){
             navBar.backgroundColor = self.navigationController.navigationBar.barTintColor;
         }else if([UINavigationBar appearance].barTintColor.isNotEmpty){
