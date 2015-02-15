@@ -3,7 +3,7 @@
 Custom the NavgationBar in EasyIOS with A hack way
 
 系统导航条经常会出现各种问题，尤其需要透明导航条的时候，会出现很多棘手的问题。一般的解决方式就是自定义一个导航条
-本项目通过重载一下4个方法来实现导航条的自定义。
+本项目通过重载以下4个方法来实现导航条的自定义。
 
 	    [$ swizzleMethod:@selector(setTitle:) with:@selector(nav_setTitle:) in:[Scene class]];
 	    [$ swizzleMethod:@selector(showBarButton:button:) with:@selector(nav_showBarButton:button:) in:[Scene class]];
